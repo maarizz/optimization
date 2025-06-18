@@ -25,7 +25,13 @@ As the chief architect of **Axion Prime**, a futuristic, grid-structured mega-ci
 
 ## 🧾 Input Format
 
-
+<pre>
+ N,K
+ x<sub>1</sub>,y<sub>1</sub>,w<sub>1</sub>
+ x<sub>2</sub>,y<sub>2</sub>,w<sub>2</sub>
+ ......
+ x<sub>n</sub>,y<sub>n</sub>,w<sub>n</sub>
+</pre>
 
 - `N`: Total number of buildings.
 - `K`: Minimum number of buildings to enclose.
@@ -49,7 +55,12 @@ As the chief architect of **Axion Prime**, a futuristic, grid-structured mega-ci
 
 Each edge should be:
 
+<pre>
+x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub>
+</pre>
+
 Where:
+
 - Each edge connects point `(x₁, y₁)` to `(x₂, y₂)`
 - All edges must form a **closed loop**, listed **in order**
 - Edges must be **either horizontal or vertical**
@@ -63,3 +74,4 @@ You can compile and run the implementation with:
 ```bash
 g++ -std=c++17 -O2 opti.cpp -o opti
 ./opti < input.txt > output.txt
+```
